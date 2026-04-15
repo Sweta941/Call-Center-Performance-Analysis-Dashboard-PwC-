@@ -1,65 +1,162 @@
-# 📞 Call Center Analysis Dashboard
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+    @page {
+        size: A4;
+        margin: 20mm;
+        background-color: #ffffff;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 5px solid #f39c12;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 24pt;
+    }
+    .header p {
+        margin: 10px 0 0;
+        font-size: 14pt;
+        opacity: 0.9;
+    }
+    .section {
+        margin: 20px 0;
+        padding: 15px;
+    }
+    h2 {
+        color: #2c3e50;
+        border-left: 5px solid #f39c12;
+        padding-left: 10px;
+        font-size: 18pt;
+        margin-bottom: 15px;
+    }
+    h3 {
+        color: #e67e22;
+        font-size: 14pt;
+        margin-top: 20px;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+    .grid {
+        display: block;
+        width: 100%;
+    }
+    .footer {
+        text-align: center;
+        font-size: 9pt;
+        color: #7f8c8d;
+        border-top: 1px solid #eee;
+        margin-top: 30px;
+        padding-top: 10px;
+    }
+    .highlight-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>📞 Call Center Analysis Dashboard</h1>
+        <p>Strategic Insights through Data Visualization</p>
+    </div>
 
-![Power BI](https://img.shields.io/badge/Data_Visualization-Power_BI-yellow)
-![DAX](https://img.shields.io/badge/Analytics-DAX-blue)
-![ETL](https://img.shields.io/badge/ETL-Power_Query-orange)
+    <div class="section">
+        <h2>📊 Project Overview</h2>
+        <p>This project features a comprehensive Power BI dashboard designed to monitor and analyze call center operations. It provides actionable insights into key performance indicators (KPIs) such as service levels, agent performance, and customer satisfaction metrics to drive operational efficiency. [cite: 1, 3]</p>
+    </div>
 
-## 📋 Table of Contents
-* [Executive Summary](#-executive-summary)
-* [Dashboard Architecture](#%EF%B8%8F-dashboard-architecture)
-* [Technical Deep Dive](#-technical-deep-dive)
-* [Insights & KPIs](#-insights--kpis)
-* [How to Deploy](#-how-to-deploy)
+    <div class="section">
+        <h2>🛠️ Dashboard Architecture</h2>
+        <div class="highlight-box">
+            <h3>Executive Summary</h3>
+            <ul>
+                <li>Provides a high-level view of total calls and answer rates. [cite: 1, 3]</li>
+                <li>Tracks abandoned call percentages to identify service gaps. [cite: 1, 3]</li>
+            </ul>
 
----
+            <h3>Agent Analytics</h3>
+            <ul>
+                <li>Offers a detailed breakdown of individual agent metrics. [cite: 1, 3]</li>
+                <li>Monitors efficiency through Average Handle Time (AHT) and resolution rates. [cite: 1, 3]</li>
+            </ul>
 
-## 📊 Executive Summary
-This Power BI project transforms raw call center logs into a strategic decision-making tool. By analyzing agent performance and call distributions, the dashboard enables management to optimize workforce allocation and improve customer satisfaction scores.
+            <h3>Trend Analysis</h3>
+            <ul>
+                <li>Visualizes call volume patterns by hour and day. [cite: 1, 3]</li>
+                <li>Assists in workforce scheduling by identifying peak arrival times. [cite: 1, 3]</li>
+            </ul>
 
-> [cite_start]**Note:** The underlying data model is built on a Star Schema for optimal performance and utilizes the **Solar** custom theme for enhanced visual clarity[cite: 3, 27].
+            <h3>Customer Experience</h3>
+            <ul>
+                <li>Analyzes post-call survey data to gauge service quality. [cite: 1, 3]</li>
+                <li>Tracks satisfaction scores (CSAT) to improve customer retention. [cite: 1, 3]</li>
+            </ul>
+        </div>
+    </div>
 
----
+    <div class="section">
+        <h2>⚙️ Technical Implementation</h2>
+        <h3>Data Modeling & Security</h3>
+        <ul>
+            <li>Built on a robust <strong>DataModel</strong> designed for high-performance querying. [cite: 4, 21]</li>
+            <li>Implements specific <strong>SecurityBindings</strong> to manage data access and integrity. [cite: 4]</li>
+            <li>Utilizes an organized <strong>DiagramLayout</strong> to manage complex table relationships. [cite: 1, 27]</li>
+        </ul>
 
-## 🛠️ Dashboard Architecture
+        <h3>Visual Design & Branding</h3>
+        <ul>
+            <li>Employs the professional <strong>Solar</strong> built-in theme for a high-contrast, accessible interface. [cite: 3]</li>
+            <li>Integrated custom branding assets, specifically the <strong>PwC logo</strong>. [cite: 3]</li>
+            <li>Utilizes the <strong>CY23SU11</strong> base theme to ensure modern UI standards. [cite: 3]</li>
+        </ul>
 
-### 🗂️ Report Pages (Tabs)
-1. **Performance Overview**: A high-level view of departmental KPIs and volume trends.
-2. **Agent Analytics**: Granular tracking of individual agent efficiency and resolution rates.
-3. **Customer Experience**: Analysis of satisfaction scores (CSAT) and abandonment rates.
-4. **Volume Forecasting**: Visualizations of peak hours and days to assist in scheduling.
+        <h3>Data Transformation & Package Structure</h3>
+        <ul>
+            <li>Leverages Power Query to clean and reshape metadata and connection settings. [cite: 1, 3]</li>
+            <li>Manages various static resources and registered assets to maintain a consistent report layout. [cite: 3]</li>
+            <li>Structured with internal components including Content_Types, Settings, and Versioning for stable deployment. [cite: 1, 27]</li>
+        </ul>
+    </div>
 
-### ⚙️ Backend Components
-* [cite_start]**Theme Configuration**: Utilizes the `Solar.json` and `CY23SU11.json` base themes for a professional UI.
-* [cite_start]**Resource Assets**: Integrated custom branding via registered PNG resources.
-* [cite_start]**Layout Engine**: Custom `DiagramLayout` and `Report/Layout` configurations to ensure mobile and desktop responsiveness[cite: 1, 27].
+    <div class="section">
+        <h2>📈 Insights & Impact</h2>
+        <ul>
+            <li><strong>Optimized Staffing:</strong> Identified peak call hours to allow for better workforce alignment and scheduling. [cite: 1, 3]</li>
+            <li><strong>Reduced Wait Times:</strong> Highlighted high abandonment rates during specific shifts to target coaching. [cite: 1, 3]</li>
+            <li><strong>Automated Reporting:</strong> Replaced manual tracking with a real-time, automated data solution using defined connection strings. [cite: 27]</li>
+        </ul>
+    </div>
 
----
+    <div class="section">
+        <h2>📂 Repository Structure</h2>
+        <ul>
+            <li><strong>Call Center Analysis Dashboard.pbix:</strong> The primary Power BI file containing the data model, transformations, and visual reports. [cite: 1]</li>
+            <li><strong>Static Resources:</strong> Includes organizational logos (PwC) and custom theme JSON files (Solar) used for the dashboard's visual identity. [cite: 3]</li>
+            <li><strong>Metadata & Settings:</strong> Configuration files that define report versions and data connection properties. [cite: 3, 27]</li>
+        </ul>
+    </div>
 
-## 💻 Technical Deep Dive
-
-### Data Modeling
-[cite_start]The dashboard employs a robust **DataModel** with defined **SecurityBindings** to ensure role-based access control[cite: 4, 27]. 
-
-### Key DAX Measures (Conceptual)
-* **Average Handle Time (AHT)**: $\frac{\text{Total Talk Time} + \text{Total Hold Time} + \text{Total Wrap Time}}{\text{Total Calls Handled}}$
-* **Service Level**: $\frac{\text{Calls Answered within } X \text{ Seconds}}{\text{Total Calls Received}}$
-* **Abandonment Rate**: $\frac{\text{Abandoned Calls}}{\text{Total Calls Received}}$
-
-### Data Transformation (Power Query)
-* [cite_start]Cleaned and reshaped metadata and settings[cite: 1].
-* [cite_start]Established connections between call logs, agent directories, and date tables.
-
----
-
-## 📈 Insights & KPIs
-* **Volume Analysis**: Identified peak call arrivals between **10:00 AM and 2:00 PM**, suggesting a shift in staffing requirements.
-* **Agent Efficiency**: Highlighting top-tier agents with high **First Call Resolution (FCR)** rates.
-* **Service Gaps**: Visualized correlation between high hold times and lower customer satisfaction scores.
-
----
-
-## 🚀 How to Deploy
-
-1. **Clone the Repository**:
-   ```bash
-   git clone [https://github.com/YourUsername/Call-Center-Analysis.git](https://github.com/YourUsername/Call-Center-Analysis.git)
+    <div class="footer">
+        Portfolio Project Documentation | Call Center Analysis
+    </div>
+</body>
+</html>
