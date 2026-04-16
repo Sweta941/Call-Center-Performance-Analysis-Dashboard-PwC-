@@ -14,6 +14,9 @@
 </div>
 
 ---
+![Page 1 - Operations Overview](./assets/page1-overview.png)
+![Page 2 - Agent Performance](./assets/page2-agents.png)
+---
 
 ## 🗺️ Table of Contents
 
