@@ -16,7 +16,9 @@
 ---
 ![Page 1 - Operations Overview](https://github.com/Sweta941/Call-Center-Performance-Analysis-Dashboard-PwC-/blob/cc92492d375e089f8ce388b0e6c76f2aa06cc1e9/Dashboard%20Page%20-%201.png)
 
-![Page 2 - Agent Performance](./assets/page2-agents.png)
+
+![Page 2 - Agent Performance](https://github.com/Sweta941/Call-Center-Performance-Analysis-Dashboard-PwC-/blob/95c30333575b5c37df184793c211f4864e30f125/Dashboard%20Page%20-%202.png)
+
 ---
 
 ## 🗺️ Table of Contents
