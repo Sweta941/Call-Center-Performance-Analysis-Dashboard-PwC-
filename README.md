@@ -142,6 +142,14 @@ Avg Speed of Answer
 
 ---
 
+## 👤 Author
+
+**[Sweta Mehta]**  
+
+Data Analyst
+
+---
+
 <div align="center">
 
 
