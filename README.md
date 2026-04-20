@@ -140,7 +140,7 @@ Avg Speed of Answer
 | **Report Design** | Solar theme, multi-page layout, interactive slicers |
 | **Analytical Skills** | KPI design, operational analytics, agent performance benchmarking |
 
----
+----
 
 ## 👤 Author
 
@@ -148,7 +148,7 @@ Avg Speed of Answer
 
 Data Analyst
 
----
+----
 
 <div align="center">
 
