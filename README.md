@@ -156,5 +156,3 @@ Data Analyst
 *Built as part of a data analytics portfolio · Feel free to reach out with questions or feedback*
 
 </div>
-
-
